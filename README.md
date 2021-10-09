@@ -22,7 +22,7 @@ embeddings and (3) the ELECTRA model.
 The `ed8 dictionary` is provided in YAML format and can be applied via
 the the `quanteda` package. The dictionary and the R script to apply the
 dictionary to a data frame with a ‘text’ column can be found in the
-folder `"./ed8"`.
+folder “./ed8”.
 
 ``` r
 # First, load quanteda package
@@ -147,7 +147,7 @@ data <- cbind(data, wb.anger)
 
 The ELECTRA files are provided in the folder “./electra”. The model can
 be applied to text data using the Python code as shown in
-“apply\_electra.ipynb”. Simply use a data frame with text column.
+`apply_electra.ipynb`. Simply use a data frame with text column.
 
 ``` python
 # Set working directory
