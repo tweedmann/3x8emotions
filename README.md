@@ -1,7 +1,7 @@
 3x8emotions
 ================
 Tobias Widmann & Maximilian Wich
-10/7/2021
+October 15, 2021
 
 Repo containing code and models for 3 different tools to measure appeals
 to 8 discrete emotions in German political text, as described and
