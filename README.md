@@ -13,10 +13,9 @@ the creation and performance of the different tools. These tools are
 free to use for academic research. In case you use one or multiple of
 these, please always cite the article above.
 
-In order to obtain all necessary files, start by downloading this repo
-as a .zip file. The folder contains all scripts to apply the (1) ed8
-dictionary, (2) the neural network models based on locally trained word
-embeddings and (3) the ELECTRA model. However, due to size limitations you need to download the ELECTRA model manually, by clicking on "3x8emotions" on the right side under "Releases".
+In order to obtain all necessary files, click on the latest release on the right side
+and download source code and "pytorch_model.bin" (ELECTRA model). Due to size limitations, the ELECTRA model needs 
+to be downloaded manually. 
 
 ## (1) ed8
 
