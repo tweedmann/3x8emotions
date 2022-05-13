@@ -143,7 +143,7 @@ for (i in 1:ndoc(cgdfm)){
 # The machine learning models are provided in the folder "./neuralnet/models"
 # for example, anger:
 
-model <- load_model_hdf5("./models/keras_anger", custom_objects = NULL, compile = TRUE)
+model <- load_model_hdf5("./models/anger", custom_objects = NULL, compile = TRUE)
 wb.anger <- model %>% predict_classes(embed)
 data <- cbind(data, wb.anger)
 ```
