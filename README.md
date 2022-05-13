@@ -15,7 +15,7 @@ these, please always cite the article above.
 
 In order to obtain all necessary files, click on the latest release on the right side
 and download source code and "pytorch_model.bin" (ELECTRA model). Due to size limitations, the ELECTRA model needs 
-to be downloaded manually. 
+to be downloaded manually. In order for the python code to work (apply_electra.ipynb), you need to copy the file "pytorch_model.bin" into the folder "./03_electra/models/final/german-nlp-group/electra-base-german-uncased". 
 
 ## (1) ed8
 
