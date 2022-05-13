@@ -16,7 +16,7 @@ these, please always cite the article above.
 In order to obtain all necessary files, start by downloading this repo
 as a .zip file. The folder contains all scripts to apply the (1) ed8
 dictionary, (2) the neural network models based on locally trained word
-embeddings and (3) the ELECTRA model.
+embeddings and (3) the ELECTRA model. However, due to size limitations you need to download the ELECTRA model manually, by clicking on "3x8emotions" on the right side under "Releases".
 
 ## (1) ed8
 
