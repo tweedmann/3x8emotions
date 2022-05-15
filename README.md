@@ -17,7 +17,7 @@ In order to obtain all necessary files, click on the latest release on the right
 and download source code and "pytorch_model.bin" (ELECTRA model). Due to size limitations, the ELECTRA model needs 
 to be downloaded manually. After downloading and unpacking, you need to copy the file "pytorch_model.bin" into the folder "./03_electra/models/final/german-nlp-group/electra-base-german-uncased". 
 
-## (1) ed8
+## (1) ed8 (dictionary)
 
 The `ed8 dictionary` is provided in YAML format and can be applied via
 the the `quanteda` package. The dictionary and the R script `apply_ed8.R` to apply the
@@ -83,7 +83,7 @@ results$pride.norm <- results$ed8.PRIDE / results$terms
 results$hope.norm <- results$ed8.HOPE / results$terms
 ```
 
-## (2) Neural Network Classifiers
+## (2) Neural Network Classifiers (based on loc. word embeddings)
 
 The neural network classifiers and locally trained word embedding model
 are provided in the folder “./02_neuralnet”. The code for turning text into
@@ -150,7 +150,7 @@ wb.anger <- model %>% predict_classes(embed)
 data <- cbind(data, wb.anger)
 ```
 
-## (3) ELECTRA Model
+## (3) ELECTRA Model (Transformer model)
 
 The ELECTRA files are provided in the folder `./03_electra`. The model can
 be applied to text data using the Python code as shown in the Python notebook
