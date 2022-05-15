@@ -14,8 +14,7 @@ free to use for academic research. In case you use one or multiple of
 these, please always cite the article above.
 
 In order to obtain all necessary files, click on the latest release on the right side
-and download source code and "pytorch_model.bin" (ELECTRA model). Due to size limitations, the ELECTRA model needs 
-to be downloaded manually. After downloading and unpacking, you need to copy the file "pytorch_model.bin" into the folder "./03_electra/models/final/german-nlp-group/electra-base-german-uncased". 
+and download the source code. Two files need to be downloaded manually due to size limitations: the ELECTRA model (pytorch_model.bin) and the locally trained word embeddings (vec_ed_preprocessed.txt). After downloading and unpacking, you need to copy the file "pytorch_model.bin" into the folder "./03_electra/models/final/german-nlp-group/electra-base-german-uncased". The file "vec_ed_preprocessed.txt" should be moved to the folder "02_neuralnet".
 
 ## (1) ed8 (dictionary)
 
