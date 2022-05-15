@@ -25,6 +25,9 @@ dictionary to a data frame with a ‘text’ column can be found in the
 folder “./01_ed8”.
 
 ``` r
+# Set working directory
+setwd("./01_ed8")
+
 # First, load quanteda package
 library(quanteda)
 
