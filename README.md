@@ -95,7 +95,7 @@ library(keras)
 library(tidytext)
 
 # Set working directory
-setwd("./neuralnet")
+setwd("./02_neuralnet")
 
 
 # First, you need to turn your text into sentences
