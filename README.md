@@ -1,8 +1,7 @@
 3x8emotions
 ================
 Tobias Widmann & Maximilian Wich
-
-May 2022
+June 2022
 
 Repo containing code and models for 3 different tools to measure appeals
 to 8 discrete emotions in *German political text*, as described and
@@ -13,20 +12,19 @@ the creation and performance of the different tools. These tools are
 free to use for academic research. In case you use one or multiple of
 these, please always cite the article above.
 
-In order to obtain all necessary files, click on the latest release on the right side
-and download the source code. Two files need to be downloaded manually due to size limitations: the ELECTRA model (pytorch_model.bin) and the locally trained word embeddings (vec_ed_preprocessed.txt). After downloading and unpacking, you need to copy the file "pytorch_model.bin" into the folder "./03_electra/models/final/german-nlp-group/electra-base-german-uncased". The file "vec_ed_preprocessed.txt" should be moved to the folder "02_neuralnet".
+In order to obtain all necessary files, start by downloading this repo
+as a .zip file. The folder contains all scripts to apply the (1) ed8
+dictionary, (2) the neural network models based on locally trained word
+embeddings and (3) the ELECTRA model.
 
-## (1) ed8 (dictionary)
+## (1) ed8
 
 The `ed8 dictionary` is provided in YAML format and can be applied via
-the the `quanteda` package. The dictionary and the R script `apply_ed8.R` to apply the
+the `quanteda` package. The dictionary and the R script `apply_ed8.R` to apply the
 dictionary to a data frame with a ‘text’ column can be found in the
 folder “./01_ed8”.
 
 ``` r
-# Set working directory
-setwd("./01_ed8")
-
 # First, load quanteda package
 library(quanteda)
 
@@ -82,7 +80,7 @@ results$pride.norm <- results$ed8.PRIDE / results$terms
 results$hope.norm <- results$ed8.HOPE / results$terms
 ```
 
-## (2) Neural Network Classifiers (based on loc. word embeddings)
+## (2) Neural Network Classifiers
 
 The neural network classifiers and locally trained word embedding model
 are provided in the folder “./02_neuralnet”. The code for turning text into
@@ -97,7 +95,7 @@ library(keras)
 library(tidytext)
 
 # Set working directory
-setwd("./02_neuralnet")
+setwd("./neuralnet")
 
 
 # First, you need to turn your text into sentences
@@ -144,16 +142,16 @@ for (i in 1:ndoc(cgdfm)){
 # The machine learning models are provided in the folder "./neuralnet/models"
 # for example, anger:
 
-model <- load_model_hdf5("./models/anger", custom_objects = NULL, compile = TRUE)
+model <- load_model_hdf5("./models/keras_anger", custom_objects = NULL, compile = TRUE)
 wb.anger <- model %>% predict_classes(embed)
 data <- cbind(data, wb.anger)
 ```
 
-## (3) ELECTRA Model (Transformer model)
+## (3) ELECTRA Model
 
 The ELECTRA files are provided in the folder `./03_electra`. The model can
-be applied to text data using the Python code as shown in the Python notebook
-`apply_electra.ipynb`. The ELECTRA model was trained on sentences, so you need to bring your text data on sentence level first.
+be applied to text data using the Python code as shown in the Python notebook `apply_electra.ipynb`. The ELECTRA model was trained on sentences, so you need to bring your text data on sentence level first.
+
 
 ``` python
 # Set working directory
