@@ -153,7 +153,7 @@ data <- cbind(data, wb.anger)
 
 The ELECTRA files are provided in the folder `./03_electra`. The model can
 be applied to text data using the Python code as shown in the Python notebook
-`apply_electra.ipynb`.
+`apply_electra.ipynb`. The ELECTRA model was trained on sentences, so you need to bring your text data on sentence level first.
 
 ``` python
 # Set working directory
