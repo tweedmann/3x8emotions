@@ -20,7 +20,8 @@ these, please always cite the article above.**
 In order to obtain all necessary files, start by downloading this repo
 as a .zip file. The folder contains all scripts to apply the (1) ed8
 dictionary, (2) the neural network models based on locally trained word
-embeddings and (3) the ELECTRA model.
+embeddings and (3) the ELECTRA model. Important: Download the files by clicking on the latest release on the right side. Two files need to be downloaded additionally due to size limitations: the ELECTRA model (pytorch_model.bin) and the locally trained word embeddings (vec_ed_preprocessed.txt).
+
 
 ## (1) ed8
 
