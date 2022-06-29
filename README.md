@@ -7,10 +7,15 @@ Repo containing code and models for 3 different tools to measure appeals
 to 8 discrete emotions in *German political text*, as described and
 validated in the following article:
 
+*Widmann, Tobias, and Maximilian Wich. "Creating and Comparing
+Dictionary, Word Embedding, and Transformer-Based Models to Measure
+Discrete Emotions in German Political Text." Political Analysis, June
+29, 2022, 1--16. <https://doi.org/10.1017/pan.2022.15>*
+
 Please start by reading this article which contains information about
 the creation and performance of the different tools. These tools are
-free to use for academic research. In case you use one or multiple of
-these, please always cite the article above.
+free to use for academic research. **In case you use one or multiple of
+these, please always cite the article above.**
 
 In order to obtain all necessary files, start by downloading this repo
 as a .zip file. The folder contains all scripts to apply the (1) ed8
